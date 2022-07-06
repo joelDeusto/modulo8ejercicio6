@@ -1,0 +1,126 @@
+/* Reinicializa todos los márgenes y rellenos como primera declaración de estilos */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Página centrada de 800 píxeles de ancho */
+#contenedor {
+  width: 800px;
+  margin: 15px auto;
+}
+
+#cabecera {
+  padding-inline: 15px;
+  padding-top: 20px;
+  /* Respeta los colores de fuente y fondos */
+  font-family: Arial, Helvetica, sans-serif;
+  color: #e61112;
+  font-size: 28px;
+}
+
+#descripcion1, #descripcion2 {
+  /* Respeta los colores de fuente y fondos */
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: white;
+  font-size: 15px;
+  font-weight: normal;
+}
+
+#descripcion1 {
+  padding-inline: 15px;
+  padding-bottom: 15px;
+}
+
+#descripcion2 {
+  padding: 15px 15px;
+}
+
+p {
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 15px;  
+}
+
+#cuerpo {
+  height: 120px;
+  /* Distancia entre elementos de 15 píxeles */
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+#caja1 {
+  float: left;
+  /* Distancia entre elementos de 15 píxeles. Total 800 - 200 (caja izquierda) - 15 (distancia entre elementos) = 585 */
+  width: 585px;
+  height: 120px;
+  /* Respeta los colores de fuente y fondos */
+  background-color: #dfdfdd;
+
+}
+
+#caja2 {
+  float: right;
+  /* Una columna a la derecha de 200 píxeles de ancho */
+  width: 200px;
+  height: 60px;
+  /* Respeta los colores de fuente y fondos */
+  background-color: #b1aca9;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+/* El primer bloque de texto simulará texto saliéndose por ambos lados de la caja */
+#grid {
+  display: grid;
+}
+
+#borde {
+  margin-top: 15px;
+  margin-right: 15px;
+  margin-left: 15px;
+  height: 35px;
+  /* Los bloques de texto tendrán un borde de 5 píxeles */
+  border-width: 5px;
+  border-style: dashed;
+  border-color: #FFFFFF;
+  grid-row: 1;
+  grid-column: 1;
+}
+
+#bloque1 {
+  margin-top: 17.5px;
+  margin-right: 15px;
+  margin-left: 3px;
+  grid-row: 1;
+  grid-column: 1;
+}
+
+#bloque2 {
+  margin: 15px;
+  /* Los bloques de texto tendrán un borde de 5 píxeles */
+  border-width: 5px;
+  border-style: dashed;
+  border-color: #FFFFFF;
+}
+
+#bloque3 {
+  margin-inline: 15px;
+}
+
+/* Cabecera y pie de página que ocupen todo el ancho y cuyas alturas se ajusten al contenido. */
+
+header {
+  width: 100%;
+  height: auto;
+  /* Respeta los colores de fuente y fondos */
+  background-color: #79777a;
+}
+
+footer {
+  clear: both;
+  width: 100%;
+  height: auto;
+  /* Respeta los colores de fuente y fondos */
+  background-color: #79777a;
+}
